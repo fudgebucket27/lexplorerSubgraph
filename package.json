@@ -1,0 +1,16 @@
+{
+  "name": "lexplorer",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ lexplorer",
+    "create-local": "graph create --node http://localhost:8020/ lexplorer",
+    "remove-local": "graph remove --node http://localhost:8020/ lexplorer",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 lexplorer"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.27.0",
+    "@graphprotocol/graph-ts": "0.24.1"
+  }
+}
